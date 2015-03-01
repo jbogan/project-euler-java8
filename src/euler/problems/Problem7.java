@@ -17,6 +17,7 @@ import static euler.utils.NumberUtils.isPrime;
  */
 public class Problem7 implements Callable<Long> {
     private static final long PRIME_TO_FIND = 10_001;
+
     @Override
     public Long call() throws Exception {
         return LongStream
