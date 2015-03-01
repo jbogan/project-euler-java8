@@ -25,7 +25,6 @@ public class Problem3 implements Callable<Long> {
         return LongStream
                 .range(1, Math.round(Math.sqrt(NUMBER_TO_TEST)))
                 .filter(x -> isDivisbleBy(NUMBER_TO_TEST, x) && isPrime(x))
-                .sorted()
                 .max()
                 .getAsLong();
     }
