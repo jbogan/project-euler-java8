@@ -21,7 +21,7 @@ public final class NumberUtils {
      * Simple prime test (not good for large numbers).
      */
     public static boolean isPrime(long n) {
-        if (n < 3) {
+        if (n <= 3) {
             return n > 1;
         } else if (isEven(n) || isDivisibleBy(n, 3)) {
             return false;
