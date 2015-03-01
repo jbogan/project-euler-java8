@@ -6,9 +6,6 @@ import java.util.List;
 import java.util.concurrent.Callable;
 import java.util.stream.LongStream;
 
-import static euler.utils.NumberUtils.isDivisbleBy;
-import static euler.utils.NumberUtils.isPrime;
-
 /**
  * A palindromic number reads the same both ways.
  *

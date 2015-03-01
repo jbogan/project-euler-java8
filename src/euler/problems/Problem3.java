@@ -1,13 +1,9 @@
 package euler.problems;
 
-import euler.utils.NumberUtils;
-
 import java.util.concurrent.Callable;
-import java.util.function.LongSupplier;
 import java.util.stream.LongStream;
 
-import static euler.utils.NumberUtils.isDivisbleBy;
-import static euler.utils.NumberUtils.isOdd;
+import static euler.utils.NumberUtils.isDivisibleBy;
 import static euler.utils.NumberUtils.isPrime;
 
 /**
@@ -24,7 +20,7 @@ public class Problem3 implements Callable<Long> {
     public Long call() throws Exception {
         return LongStream
                 .range(1, Math.round(Math.sqrt(NUMBER_TO_TEST)))
-                .filter(x -> isDivisbleBy(NUMBER_TO_TEST, x) && isPrime(x))
+                .filter(x -> isDivisibleBy(NUMBER_TO_TEST, x) && isPrime(x))
                 .max()
                 .getAsLong();
     }

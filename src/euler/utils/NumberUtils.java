@@ -13,7 +13,7 @@ public final class NumberUtils {
         return n % 2 == 0;
     }
 
-    public static boolean isDivisbleBy(long dividend, long divisor) {
+    public static boolean isDivisibleBy(long dividend, long divisor) {
         return dividend % divisor == 0;
     }
 
@@ -23,12 +23,12 @@ public final class NumberUtils {
     public static boolean isPrime(long n) {
         if (n < 3) {
             return n > 1;
-        } else if (isEven(n) || isDivisbleBy(n, 3)) {
+        } else if (isEven(n) || isDivisibleBy(n, 3)) {
             return false;
         } else {
             double sqrtOfN = Math.floor(Math.sqrt(n));
             for (int i = 5; i <= sqrtOfN; i += 6) {
-                if (isDivisbleBy(n, i) || isDivisbleBy(n, i + 2)) {
+                if (isDivisibleBy(n, i) || isDivisibleBy(n, i + 2)) {
                     return false;
                 }
             }

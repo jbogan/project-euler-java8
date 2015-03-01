@@ -3,8 +3,6 @@ package euler.problems;
 import java.util.concurrent.Callable;
 import java.util.stream.LongStream;
 
-import static euler.utils.NumberUtils.isDivisbleBy;
-
 /**
  * The sum of the squares of the first ten natural numbers is,
  *
